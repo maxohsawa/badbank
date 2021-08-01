@@ -16,8 +16,13 @@ function Spa() {
                             balance: 100
                         }
                     ],
-                    loggedIn: false,
-                    loggedInAs: {}
+                    loggedIn: true,
+                    loggedInAs: {
+                            name: 'abel',
+                            email: 'abel@mit.edu',
+                            password: 'secret',
+                            balance: 100
+                        }
                 }
             }>
 

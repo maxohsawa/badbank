@@ -81,7 +81,7 @@ function Login() {
                                 className="form-control"
                                 id="email"
                                 placeholder="Enter name"
-                                value={email}
+                                value={email || "abel@mit.edu"}
                                 onChange={ (e) => {
                                     setEmail(e.currentTarget.value)
                                 }}
@@ -94,7 +94,7 @@ function Login() {
                                 className="form-control"
                                 id="password"
                                 placeholder="Enter password"
-                                value={password}
+                                value={password || "secret"}
                                 onChange={ (e) => {
                                     setPassword(e.currentTarget.value)
                                 }}
