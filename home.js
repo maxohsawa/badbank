@@ -1,12 +1,12 @@
 function Home() {
 
-    const ctx = React.useContext(UserContext);
-
     return (
-        <>
-            <h1>Home</h1>
-            <br></br>
-            {JSON.stringify(ctx)}
-        </>
+        <Card
+            txtcolor="black"
+            header="BadBank Landing Page"
+            title="Welcome to BadBank"
+            text="You can move around using the navigation bar"
+            body={(<img src="badbank.jpg" className="img-fluid" alt="Responsive image" />)}
+        />
     );
 }
