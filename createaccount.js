@@ -1,3 +1,4 @@
+
 function CreateAccount() {
 
     const [show, setShow] = React.useState(true);
@@ -14,6 +15,14 @@ function CreateAccount() {
             return false;
         }
 
+        if(label === 'email'){
+            if(ctx.users.filter( (item) => item.email === field).length > 0){
+                setStatus('Error: email is already in use');
+                return false;
+            }
+        }
+        
+
         return true;
     }
 
@@ -27,7 +36,7 @@ function CreateAccount() {
         if(!validate(email, 'email')) return;
         if(!validate(password, 'password')) return;
 
-        ctx.users.push({name, email, password, balance: 100, loggedin: false});
+        ctx.users.push({name, email, password, balance: 100});
 
         setShow(false);
     }
@@ -46,7 +55,7 @@ function CreateAccount() {
                 bgcolor=""
                 header="Create Account"
                 status={status}
-                body={show ? (
+                body={ (show && !ctx.loggedin) ? (
                     <>
                         Name
                         <br/>

@@ -13,10 +13,11 @@ function Spa() {
                             name: 'abel',
                             email: 'abel@mit.edu',
                             password: 'secret',
-                            balance: 100,
-                            loggedin: false
+                            balance: 100
                         }
-                    ]
+                    ],
+                    loggedIn: false,
+                    loggedInAs: {}
                 }
             }>
 
