@@ -2,7 +2,7 @@ function Home() {
 
     return (
         <Card
-            txtcolor="black"
+            textcolor="dark"
             header="BadBank Landing Page"
             title="Welcome to BadBank"
             text="You can move around using the navigation bar"

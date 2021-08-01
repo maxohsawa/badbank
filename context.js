@@ -7,8 +7,8 @@ function Card(props) {
 
     function classes() {
         const bg = props.bgcolor ? ' bg-'+props.bgcolor : ' ';
-        // const txt = props.textcolor ? ' text-'+props.textcolor : ' text-white';
-        return 'card mb-3' + bg;
+        const txt = props.textcolor ? ' text-'+props.textcolor : ' text-white';
+        return 'card mb-3' + bg + txt;
     }
 
     return (
